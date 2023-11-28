@@ -19,18 +19,24 @@
         h1 {
             font-size: 22px;
         }
-        h2 {
+        label {
+            display: block;
             font-size: 18px;
+            margin-bottom: 10px;
         }
     </style>
   </head>
   <body>
     <main>
         <h1>Example of native date input</h1>
-        <h2>Select birth date</h1>
         <p>
-            <input type="date" name="birthDate" placeholder="MM.DD.YYYY" />
+            <label for="birthDate">Select birth date</label>
+            <input id="birthDate" type="date" name="birthDate" placeholder="MM.DD.YYYY" />
         </p>
     </main>
+    <script>
+        const max = new Date();
+        document.getElementById("birthDate").max = max.getFullYear() + '-' + (max.getMonth() + 1) + '-' + max.getDate();
+    </script>
   </body>
 </html>
