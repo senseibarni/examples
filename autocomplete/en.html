@@ -32,10 +32,21 @@
         <form>
             <p>
                 <label for="field1">E-mail address</label>
-                <input id="field1" type="email" name="field1" required />
+                <input id="field1" type="email" name="field1" required autocomplete="off" />
             </p>
             <p>
                 <button type="submit">Submit</button>
+            </p>
+        </form>
+        <br><br><br>
+        <h1>Example of default autocomplete</h1>
+        <form>
+            <p>
+                <label for="email">Adres email *</label>
+                <input id="email" type="email" name="email" required />
+            </p>
+            <p>
+                <button type="submit">Wyślij</button>
             </p>
         </form>
     </main>

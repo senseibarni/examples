@@ -31,8 +31,19 @@
         <h1>Przykład autocomplete off</h1>
         <form>
             <p>
-                <label for="field1">Adres poczty elektronicznej</label>
-                <input id="field1" type="email" name="field1" required />
+                <label for="field1">Adres poczty elektronicznej *</label>
+                <input id="field1" type="email" name="field1" required autocomplete="off" />
+            </p>
+            <p>
+                <button type="submit">Wyślij</button>
+            </p>
+        </form>
+        <br><br><br>
+        <h1>Przykład z domyślnym autocomplete</h1>
+        <form>
+            <p>
+                <label for="email">Adres email *</label>
+                <input id="email" type="email" name="email" required />
             </p>
             <p>
                 <button type="submit">Wyślij</button>
